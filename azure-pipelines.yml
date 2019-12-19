@@ -8,7 +8,6 @@ trigger:
 
 pool:
   name: 'default'
-  vmImage: 'Ubuntu-16.04'
 
 variables:
   imageName: 'your-container-image-name:$(build.buildId)'
