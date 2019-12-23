@@ -6,6 +6,13 @@
 trigger:
 - master
 
+resources:
+  repositories:
+    - repository: MyRepo1
+      endpoint: github_2
+      type: github
+      name: anukritigupta1234/test
+
 pool:
   name: 'default'
 
