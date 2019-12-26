@@ -9,9 +9,9 @@ trigger:
 resources:
   repositories:
     - repository: MyRepo1
-      endpoint: github_2
+      endpoint: github_1
       type: github
-      name: anukritigupta1234/test
+      name: anukritigupta1234/hellowrold
 
 pool:
   name: 'default'
