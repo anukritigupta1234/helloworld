@@ -11,7 +11,7 @@ resources:
     - repository: MyRepo1
       endpoint: github_1
       type: github
-      name: anukritigupta1234/hellowrold
+      name: anukritigupta1234/hello-world
 
 pool:
   name: 'default'
