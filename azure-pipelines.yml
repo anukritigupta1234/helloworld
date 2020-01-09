@@ -17,9 +17,6 @@ resources:
 pool:
   name: 'default'
 
-variables:
-  imageName: 'your-container-image-name:$(build.buildId)'
-
 steps:
 - task: ArchiveFiles@2
   inputs:
