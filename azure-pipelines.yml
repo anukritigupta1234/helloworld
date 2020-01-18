@@ -10,7 +10,7 @@ resources:
   repositories:
     - repository: MyRepo1
       type: github
-      endpoint: github_1
+      endpoint: git_1
       name: anukritigupta1234/helloworld
       trigger: true
 
