@@ -10,12 +10,11 @@ resources:
   repositories:
     - repository: MyRepo1
       type: github
-      endpoint: git_1
+      endpoint: github_1
       name: anukritigupta1234/helloworld
       trigger: true
 
-pool:
-  name: 'default'
+pool: default
 
 steps:
 - task: ArchiveFiles@2
