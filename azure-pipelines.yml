@@ -17,6 +17,8 @@ trigger:
 pool: default
 
 steps:
+- publish: $(Pipeline.Workspace)/
+  artifact: a1
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
