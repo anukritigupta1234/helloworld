@@ -17,7 +17,7 @@ trigger:
 pool: default
 
 steps:
-- publish: $(Pipeline.Workspace)/
+- publish: '$(pipeline.workspace)/'
   artifact: a1
 - task: ArchiveFiles@2
   inputs:
