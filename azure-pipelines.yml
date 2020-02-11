@@ -17,8 +17,6 @@ trigger:
 pool: default
 
 steps:
-- publish: '$(pipeline.workspace)/'
-  artifact: a1
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
@@ -26,4 +24,7 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+
+- publish: '$(Build.ArtifactStagingDirectory)/'
+  artifact: a1
 
