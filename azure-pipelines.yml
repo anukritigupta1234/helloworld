@@ -14,7 +14,7 @@ resources:
 trigger:
 - master
 
-pool: default
+pool: Default
 
 steps:
 - task: ArchiveFiles@2
