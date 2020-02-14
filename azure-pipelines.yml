@@ -10,7 +10,6 @@ resources:
       endpoint: github_1
       name: anukritigupta1234/helloworld
 
-
 trigger:
 - master
 
