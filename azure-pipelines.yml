@@ -9,24 +9,16 @@ resources:
       type: github
       endpoint: github_1
       name: anukritigupta1234/helloworld
+      
 
 trigger:
 - master
 
-pool: Default
+pool: default
 
 steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+- checkout: MyRepo
 
